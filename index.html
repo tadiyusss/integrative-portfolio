@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Thaddeus Toledo</title>
+        <script src='https://cdn.tailwindcss.com'></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link rel="stylesheet" href="assets/css/fonts.css">
+    </head>
+    <body class="font-instrument">
+        <section id="hero" class="w-full h-screen text-black text-white p-2 bg-[url('/assets/images/background.png')] bg-cover bg-center bg-no-repeat">
+            <nav class="w-full p-4 md:flex block items-center justify-between" x-data="{
+                open : false
+            }" @click.outside="open = false">
+                <div class="flex items-center justify-between md:w-auto w-full">
+                    <a href="/" class="md:text-3xl text-xl font-medium">Thaddeus Toledo</a>
+                    <button class="md:hidden block" @click="open = !open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </button>
+                </div>
+                <ul class="md:flex block items-center md:space-x-8 md:mt-0 mt-4" :class="{'hidden' : !open}" >
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="index.html#skills">Career</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="biography.html">Biography</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="resume.html">Resume</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="movies.html">Movies</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="music.html">Music</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="max-w-6xl mx-auto text-center md:my-[10%] my-[25%] ">
+                <img src="/assets/images/profile-picture.jpg" class="w-36 h-36 object-cover mx-auto rounded-full mb-5">
+                <h3 class="lg:text-6xl text-3xl font-bold">Full-Stack Development and System Management</h3>
+                <p class="mt-2.5 text-gray-300">Hi, I'm <span class="text-indigo-400">Thaddeus Toledo</span>, and I design systems that are both <span class="text-indigo-400">scalable</span> and equipped with <span class="text-indigo-400">user-friendly interfaces.</span></p>
+                <div class="flex justify-center space-x-3 my-3">
+                    <a href="https://www.facebook.com/thaddeus.toledo"><img src="/assets/images/facebook.svg" class="w-6 h-6"></a>
+                    <a href="https://www.github.com/tadiyusss"><img src="/assets/images/github.svg" class="w-6 h-6 bg-gray-200 rounded"></a>
+                    <a href="https://www.linkedin.com/in/thaddeus-toledo-71b97425b/"><img src="/assets/images/linkedin.svg" class="w-6 h-6"></a>
+                </div>        
+            </div>
+        </section>
+        <div class="bg-gradient-to-b from-black to-slate-900">
+            <section id="skills" class="w-full text-white pt-10 pb-3 px-2.5">
+                <div class="max-w-7xl mx-auto px-2">
+                    <h3 class="text-3xl font-semibold pt-5">Languages and Frameworks</h3>
+                    <p class="mt-2.5 mb-3 text-slate-300">A detailed list of programming languages and frameworks I am skilled in and frequently use for development.</p>
+                    <div class="w-full mx-auto py-2 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-2.5">
+                        <div class="col-span-1 p-3 border border-slate-800 bg-slate-900/50 hover:bg-slate-900/70  text-white rounded text-left flex items-center space-x-5 shadow-sm shadow-indigo-700 ease duration-200">
+                            <div class="p-2 bg-green-500/20 rounded-lg">
+                                <img src="assets/images/languages/django.png" class="w-10 h-10 object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Django</h3>
+                                <p class="text-slate-400 text-sm">Backend Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1 p-3 border border-slate-800 bg-slate-900/50 hover:bg-slate-900/70  text-white rounded text-left flex items-center space-x-5 shadow-sm shadow-indigo-700 duration-200">
+                            <div class="p-2 bg-slate-200 rounded-lg">
+                                <img src="assets/images/languages/flask.png" class="w-10 h-10 object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Flask</h3>
+                                <p class="text-slate-400 text-sm">Backend Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1 p-3 border border-slate-800 bg-slate-900/50 hover:bg-slate-900/70  text-white rounded text-left flex items-center space-x-5 shadow-sm shadow-indigo-700 duration-200">
+                            <div class="p-2 bg-blue-500/20 rounded-lg">
+                                <img src="assets/images/languages/php.png" class="w-10 h-10 object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">PHP</h3>
+                                <p class="text-slate-400 text-sm">Backend Language</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1 p-3 border border-slate-800 bg-slate-900/50 hover:bg-slate-900/70  text-white rounded text-left flex items-center space-x-5 shadow-sm shadow-indigo-700 duration-200">
+                            <div class="p-2 bg-blue-500/20 rounded-lg">
+                                <img src="assets/images/languages/tailwind.png" class="w-10 h-10 object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Tailwind</h3>
+                                <p class="text-slate-400 text-sm">CSS Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1 p-3 border border-slate-800 bg-slate-900/50 hover:bg-slate-900/70  text-white rounded text-left flex items-center space-x-5 shadow-sm shadow-indigo-700 duration-200">
+                            <div class="p-2 bg-indigo-500/20 rounded-lg">
+                                <img src="assets/images/languages/bootstrap.png" class="w-10 h-10 object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Bootstrap</h3>
+                                <p class="text-slate-400 text-sm">CSS Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1 p-3 border border-slate-800 bg-slate-900/50 hover:bg-slate-900/70  text-white rounded text-left flex items-center space-x-5 shadow-sm shadow-indigo-700 duration-200">
+                            <div class="p-2 bg-blue-500/20 rounded-lg">
+                                <img src="assets/images/languages/jquery.png" class="w-10 h-10 object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">JQuery</h3>
+                                <p class="text-slate-400 text-sm">Javascript Library</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1 p-3 border border-slate-800 bg-slate-900/50 hover:bg-slate-900/70  text-white rounded text-left flex items-center space-x-5 shadow-sm shadow-indigo-700 duration-200">
+                            <div class="p-2 bg-blue-500/20 rounded-lg">
+                                <img src="assets/images/languages/mysql.png" class="w-10 h-10 object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">MySQL</h3>
+                                <p class="text-slate-400 text-sm">Database Management System</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1 p-3 border border-slate-800 bg-slate-900/50 hover:bg-slate-900/70  text-white rounded text-left flex items-center space-x-5 shadow-sm shadow-indigo-700 duration-200">
+                            <div class="p-2 bg-orange-500/20 rounded-lg">
+                                <img src="assets/images/languages/ubuntu.png" class="w-10 h-10 object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Ubuntu</h3>
+                                <p class="text-slate-400 text-sm">Operating System</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="w-full text-white py-3 px-2.5">
+                <div class="max-w-7xl mx-auto px-2">
+                    <h3 class="text-3xl font-semibold pt-5">Projects</h3>
+                    <p class="mt-2.5 mb-3 text-slate-300">A collection of key projects that show my skills in website development.</p>
+                    <div class="w-full mx-auto py-2 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2.5">
+                        <a href="http://thaddeustoledo.tech/projects/1/" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                            <img src="assets/images/projects/flask-cms.png" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                            <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                                <p class="text-white text-lg font-semibold">Flask CMS</p>
+                                <p class="text-slate-300 text-sm mt-1">flask-cms is a scalable administrator dashboard developed using Flask, Tailwind CSS, and sqlite3</p>
+                                <div class="flex flex-wrap gap-2.5 mt-3">
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Flask</span>
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Tailwind</span>
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">JQuery</span>
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Ubuntu</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://thaddeustoledo.tech/projects/2/" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                            <img src="assets/images/projects/portfolio-cms.png" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                            <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                                <p class="text-white text-lg font-semibold">Portfolio CMS</p>
+                                <p class="text-slate-300 text-sm mt-1">Django-Powered Portfolio with Content Management</p>
+                                <div class="flex flex-wrap gap-2.5 mt-3">
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Django</span>
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Tailwind</span>
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">JQuery</span>
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Ubuntu</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://thaddeustoledo.tech/projects/3/" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                            <img src="assets/images/projects/godeym.png" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                            <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                                <p class="text-white text-lg font-semibold">Godeym Clothing</p>
+                                <p class="text-slate-300 text-sm mt-1">Godeym is a streetwear brand offering premium-quality and fashionable apparel.</p>
+                                <div class="flex flex-wrap gap-2.5 mt-3">
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Tailwind</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://thaddeustoledo.tech/projects/4/" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                            <img src="assets/images/projects/very-secure-bank.png" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                            <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                                <p class="text-white text-lg font-semibold">Very Secure Bank</p>
+                                <p class="text-slate-300 text-sm mt-1">Very Secure Bank is a deliberately vulnerable banking application designed for red teaming practice.</p>
+                                <div class="flex flex-wrap gap-2.5 mt-3">
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Django</span>
+                                    <span class="text-center text-sm col-span-1 px-2 py-1 border border-slate-500 text-slate-400 rounded">Tailwind</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="blogs" class="w-full text-white py-3 px-2.5">
+                <div class="max-w-7xl mx-auto px-2">
+                    <h3 class="text-3xl font-semibold pt-5">Blogs</h3>
+                    <p class="mt-2.5 mb-3 text-slate-300">Articles and tutorials sharing knowledge, best practices, and insights from my development journey.</p>
+                    <div class="w-full mx-auto py-2 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2.5">
+                        <a href="http://thaddeustoledo.tech/blog/1/" class="col-span-1 border border-slate-800 bg-slate-800/30 text-white rounded">
+                            <img src="assets/images/cover.jpg" class="rounded-t h-60 w-full object-cover">
+                            <div class="p-4">
+                                <h5 class="text-2xl font-semibold">Tomghost Writeup</h5>
+                                <p class="mt-1 text-slate-300">Taking advantage of a Tomcat server vulnerability in a TryHackMe room.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <footer class="w-full py-10">
+                <div class="max-w-7xl mx-auto px-2.5 text-white ">
+                    <div class="border border-slate-700 bg-slate-800/20 rounded">
+                        <div class="border-t p-10 border-slate-700">
+                            <div class="grid md:grid-cols-2 grid-cols-1 gap-2.5">
+                                <div class="col-span-1">
+                                    <h6 class="text-2xl font-semibold">Thaddeus Toledo</h6>
+                                    <p class="text-sm text-slate-400">© 2024 | All rights reserved.</p>
+                                </div>
+                                <div class="grid grid-cols-3 col-span-1 gap-2.5 md:my-0 my-4">
+                                    <div class="col-span-1">
+                                        <h6 class="text-lg">Navigate</h6>
+                                        <ul class="text-sm text-slate-400">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="index.html#skills">Career</a></li>
+                                            <li><a href="biography.html">Biography</a></li>
+                                            <li><a href="resume.html">Resume</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-span-1">
+                                        <h6 class="text-lg">Projects</h6>
+                                        <ul class="text-sm text-slate-400">
+                                            <li>
+                                                <a href="http://thaddeustoledo.tech/projects/1/">Flask CMS</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://thaddeustoledo.tech/projects/2/">Portfolio CMS</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://thaddeustoledo.tech/projects/3/">Godeym Clothing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-span-1">
+                                        <h6 class="text-lg">Socials</h6>
+                                        <ul class="text-sm text-slate-400">
+                                            <li><a href="https://www.linkedin.com/in/thaddeus-toledo-71b97425b/">LinkedIn</a></li>
+                                            <li><a href="https://www.facebook.com/thaddeus.toledo">Facebook</a></li>
+                                            <li><a href="https://github.com/tadiyusss">Github</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <a href="#hero" class="fixed bottom-5 right-5 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+            </svg>              
+        </a>
+    </body>
+</html>

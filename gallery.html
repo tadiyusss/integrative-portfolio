@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Gallery</title>
+        <script src='https://cdn.tailwindcss.com'></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link rel="stylesheet" href="assets/css/fonts.css">
+    </head>
+    <body class="text-white bg-gradient-to-b from-black to-slate-800 font-instrument" id="top">
+        <nav class="w-full p-4 md:flex block items-center justify-between" x-data="{
+            open : false
+        }" @click.outside="open = false">
+            <div class="flex items-center justify-between md:w-auto w-full">
+                <a href="/" class="md:text-3xl text-xl font-medium">Thaddeus Toledo</a>
+                <button class="md:hidden block" @click="open = !open">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                  
+                </button>
+            </div>
+            <ul class="md:flex block items-center md:space-x-8 md:mt-0 mt-4" :class="{'hidden' : !open}" >
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="index.html#skills">Career</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="biography.html">Biography</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="movies.html">Movies</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="music.html">Music</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="max-w-7xl mx-auto px-4 pb-24">
+            <div class="md:flex block items-center justify-between my-16">
+                <h4 class="text-4xl font-medium">Gallery</h4>
+                <ul class="flex items-center space-x-8 md:mt-0 mt-4">
+                    <li>
+                        <a class="hover:text-gray-300 ease duration-200" href="#childhood-section">Childhood</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-300 ease duration-200" href="#highschool-section">Highschool</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-300 ease duration-200" href="#college-section">College</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-2xl font-medium mb-4" id="childhood-section">Childhood</h4>
+                <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+                    <a href="assets/images/gallery/childhood/FB_IMG_1562078483873.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/childhood/FB_IMG_1562078483873.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Me on a school field trip</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/childhood/FB_IMG_1572686555340.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/childhood/FB_IMG_1572686555340.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">A picture me of and my dad</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/childhood/FB_IMG_1575399844437.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/childhood/FB_IMG_1575399844437.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">A picture me of and my brother</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/childhood/FB_IMG_1575399859651.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/childhood/FB_IMG_1575399859651.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">A picture of me and my cousin</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/childhood/FB_IMG_1577339146299.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/childhood/FB_IMG_1577339146299.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Kab Scout Palaro at UMak</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/childhood/FB_IMG_1654709893012.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/childhood/FB_IMG_1654709893012.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">My 7th birthday on Jollibee</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/childhood/FB_IMG_1676592770971.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/childhood/FB_IMG_1676592770971.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Another picture of me and my brother during our school's foundation week</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/childhood/me-n-mom.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/childhood/me-n-mom.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">A picture me of and my mom</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h4 class="text-2xl font-medium mb-4" id="highschool-section">Highschool</h4>
+                <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+                    <a href="assets/images/gallery/highschool/FB_IMG_1602383950292.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/highschool/FB_IMG_1602383950292.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">My school football club</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/highschool/FB_IMG_1657409343013.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/highschool/FB_IMG_1657409343013.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">With my family at Treasure Mountain</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/highschool/FB_IMG_1669239051837.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/highschool/FB_IMG_1669239051837.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">A picture of me and my senior-highschool friends</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/highschool/FB_IMG_1671531786443.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/highschool/FB_IMG_1671531786443.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Playing on a chess tournament</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/highschool/FB_IMG_1684308470164.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/highschool/FB_IMG_1684308470164.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Practicing poses for school pageant</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/highschool/IMG_0590.JPG"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/highschool/IMG_0590.JPG" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Table tennis service practice</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/highschool/received_242086398339997.jpeg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/highschool/received_242086398339997.jpeg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">My first mentors and classmates</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/highschool/received_591156308000908.jpeg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/highschool/received_591156308000908.jpeg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">A picture of me and my junior-highschool friends</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="mt-8">
+                <h4 class="text-2xl font-medium mb-4" id="college-section">College</h4>
+                <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+                    <a href="assets/images/gallery/college/IMG20230911140046.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/college/IMG20230911140046.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Beautiful art at UST Museum</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/college/IMG20230911141511.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/college/IMG20230911141511.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Found my brother at a museum</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/college/IMG20230919160430.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/college/IMG20230919160430.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Spoliarium at National Museum</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/college/IMG20230919164139.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/college/IMG20230919164139.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Battle of the East</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/college/IMG20230919164208.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/college/IMG20230919164208.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">My girlfriend's and my palms.</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/college/IMG20231130191929.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/college/IMG20231130191929.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Beautiful scenery at Intramuros</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/college/IMG_20230929_173543_0239.jpg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/college/IMG_20230929_173543_0239.jpg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Cute drawing with my girlfriend's and my finger</p>
+                        </div>
+                    </a>
+                    <a href="assets/images/gallery/college/received_1261664981208344.jpeg"  class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                        <img src="assets/images/gallery/college/received_1261664981208344.jpeg" class="w-full h-full object-cover transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
+                        <div class="absolute inset-0 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                            <p class="text-slate-300 text-sm mt-1">Our first concert together</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="w-full py-10">
+            <div class="max-w-7xl mx-auto px-2.5 text-white ">
+                <div class="border border-slate-700 bg-slate-800/20 rounded-lg">
+                    <div class="border-t p-10 border-slate-700">
+                        <div class="grid md:grid-cols-2 grid-cols-1 gap-2.5">
+                            <div class="col-span-1">
+                                <h6 class="text-2xl font-semibold">Thaddeus Toledo</h6>
+                                <p class="text-sm text-slate-400">© 2024 | All rights reserved.</p>
+                            </div>
+                            <div class="grid grid-cols-3 col-span-1 gap-2.5 md:my-0 my-4">
+                                <div class="col-span-1">
+                                    <h6 class="text-lg">Navigate</h6>
+                                    <ul class="text-sm text-slate-400">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="index.html#skills">Career</a></li>
+                                        <li><a href="biography.html">Biography</a></li>
+                                        <li><a href="resume.html">Resume</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-1">
+                                    <h6 class="text-lg">Projects</h6>
+                                    <ul class="text-sm text-slate-400">
+                                        <li>
+                                            <a href="http://thaddeustoledo.tech/projects/1/">Flask CMS</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://thaddeustoledo.tech/projects/2/">Portfolio CMS</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://thaddeustoledo.tech/projects/3/">Godeym Clothing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-1">
+                                    <h6 class="text-lg">Socials</h6>
+                                    <ul class="text-sm text-slate-400">
+                                        <li><a href="https://www.linkedin.com/in/thaddeus-toledo-71b97425b/">LinkedIn</a></li>
+                                        <li><a href="https://www.facebook.com/thaddeus.toledo">Facebook</a></li>
+                                        <li><a href="https://github.com/tadiyusss">Github</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#top" class="fixed bottom-5 right-5 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+            </svg>              
+        </a>
+    </body>
+</html>

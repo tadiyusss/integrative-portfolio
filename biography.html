@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Biography</title>
+        <script src='https://cdn.tailwindcss.com'></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link rel="stylesheet" href="assets/css/fonts.css">
+    </head>
+    <body class="font-instrument text-white">
+        <div id="top" class="bg-[url('/assets/images/cover.jpg')] bg-cover bg-center bg-no-repeat relative">
+            <nav class="w-full p-4 relative z-10 md:flex block items-center justify-between" x-data="{
+                open : false
+            }" @click.outside="open = false">
+                <div class="flex items-center justify-between md:w-auto w-full">
+                    <a href="/" class="md:text-3xl text-xl font-medium">Thaddeus Toledo</a>
+                    <button class="md:hidden block" @click="open = !open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </button>
+                </div>
+                <ul class="md:flex block items-center md:space-x-8 md:mt-0 mt-4" :class="{'hidden' : !open}" >
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="index.html#skills">Career</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="biography.html">Biography</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="resume.html">Resume</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="movies.html">Movies</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="music.html">Music</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="relative z-10 pt-20 pb-32 text-center text-white">
+                <h1 class="text-3xl font-bold">Bike to Bytes: My Journey into Tech and Cybersecurity</h1>
+                <p class="mt-4 text-xl text-gray-400">From Pedals to Programs: How a Passion for Exploration Led Me to Cybersecurity and Tech</p>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black backdrop-blur-sm"></div>
+        </div>
+        <div class="w-full md:p-0 bg-gradient-to-b from-black to-slate-900">
+            <div class="max-w-6xl px-4 mx-auto grid md:grid-cols-2 grid-cols-1 gap-x-6 md:gap-y-24 gap-y-8 pt-24 pb-16">
+                <div class="col-span-1">
+                    <img src="assets/images/childhood.jpg" class="rounded-lg">
+                </div>
+                <div class="col-span-1 flex justify-center items-center">
+                    <div class="md:pb-0 pb-24">
+                        <h4 class="text-lg font-medium">Childhood</h4>
+                        <p class="pt-4">I was born in Muntinlupa, where my childhood was filled with fun and excitement.<sup>1</sup> I loved spending time outdoors, playing with my friends, and exploring the neighborhood.<sup>2</sup> My early years were filled with laughter and adventure as I engaged in various activities.<sup>3</sup> I have one brother, and like most siblings, we had our fair share of fights and playful moments.<sup>4</sup> Despite our differences, we always found ways to bond and have fun together.<sup>5</sup> My favorite hobbies included playing outside, watching cartoons, biking, and participating in sports.<sup>6</sup></p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <img src="assets/images/highschool.png" class="rounded-lg w-full h-96 object-cover">
+                </div>
+                <div class="col-span-1 flex justify-center items-center">
+                    <div>
+                        <h4 class="text-lg font-medium">Highschool</h4>
+                        <p class="pt-4">High school was a mix of good and bad experiences for me.<sup>1</sup> I was not particularly focused on studying during those years, but I am grateful for the lessons I learned before entering college.<sup>2</sup> One of the highlights of my high school years was being a member of the school's football team.<sup>3</sup> It was an exciting experience that allowed me to meet new people during tournaments and develop teamwork skills.<sup>4</sup> While I did not have a part-time job during my junior high school years, I started creating simple websites for clients when I reached senior high school.<sup>5</sup> However, I faced some struggles during this time.<sup>6</sup> I was quite stubborn and often skipped school to play billiards, which affected my academic performance.<sup>7</sup></p>
+
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <img src="assets/images/college.jfif" class="rounded-lg">
+                </div>
+                <div class="col-span-1 flex justify-center items-center">
+                    <div>
+                        <h4 class="text-lg font-medium">College</h4>
+                        <p class="pt-4">Currently, I am studying at the University of the East, pursuing a Bachelor of Science in Information Technology.<sup>1</sup> I chose this field because of my deep interest in computer security and programming.<sup>2</sup> The transition from senior high school to college was challenging since I had to adjust to a completely new environment without knowing anyone at the university.<sup>3</sup> However, I gradually adapted and found my place.<sup>4</sup> I am actively involved in college organizations and currently serve as the Division Head of Cybersecurity in the CCSS Research and Development team.<sup>5</sup> Balancing studies and social life is essential for me, and I always prioritize my academics to avoid repeating subjects, which would require extra time and money.<sup>6</sup></p>
+                    </div>
+                </div>
+            </div>
+            <footer class="w-full py-10">
+                <div class="max-w-7xl mx-auto px-2.5 text-white ">
+                    <div class="border border-slate-700 bg-slate-800/20 rounded-lg">
+                        <div class="border-t p-10 border-slate-700">
+                            <div class="grid md:grid-cols-2 grid-cols-1 gap-2.5">
+                                <div class="col-span-1">
+                                    <h6 class="text-2xl font-semibold">Thaddeus Toledo</h6>
+                                    <p class="text-sm text-slate-400">© 2024 | All rights reserved.</p>
+                                </div>
+                                <div class="grid grid-cols-3 col-span-1 gap-2.5 md:my-0 my-4">
+                                    <div class="col-span-1">
+                                        <h6 class="text-lg">Navigate</h6>
+                                        <ul class="text-sm text-slate-400">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="index.html#skills">Career</a></li>
+                                            <li><a href="biography.html">Biography</a></li>
+                                            <li><a href="resume.html">Resume</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-span-1">
+                                        <h6 class="text-lg">Projects</h6>
+                                        <ul class="text-sm text-slate-400">
+                                            <li>
+                                                <a href="http://thaddeustoledo.tech/projects/1/">Flask CMS</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://thaddeustoledo.tech/projects/2/">Portfolio CMS</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://thaddeustoledo.tech/projects/3/">Godeym Clothing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-span-1">
+                                        <h6 class="text-lg">Socials</h6>
+                                        <ul class="text-sm text-slate-400">
+                                            <li><a href="https://www.linkedin.com/in/thaddeus-toledo-71b97425b/">LinkedIn</a></li>
+                                            <li><a href="https://www.facebook.com/thaddeus.toledo">Facebook</a></li>
+                                            <li><a href="https://github.com/tadiyusss">Github</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <a href="#top" class="fixed bottom-5 right-5 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>              
+            </a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Tailwind</title>
+        <script src='https://cdn.tailwindcss.com'></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link rel="stylesheet" href="assets/css/fonts.css">
+    </head>
+    <body class="font-instrument text-white">
+        <div class="bg-gradient-to-b from-slate-900 to-black pb-24">
+            <nav class="w-full p-4 md:flex block items-center justify-between" id="top" x-data="{
+                open : false
+            }" @click.outside="open = false">
+                <div class="flex items-center justify-between md:w-auto w-full">
+                    <a href="/" class="md:text-3xl text-xl font-medium">Thaddeus Toledo</a>
+                    <button class="md:hidden block" @click="open = !open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </button>
+                </div>
+                <ul class="md:flex block items-center md:space-x-8 md:mt-0 mt-4" :class="{'hidden' : !open}" >
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="index.html#skills">Career</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="biography.html">Biography</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="resume.html">Resume</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="movies.html">Movies</a>
+                    </li>
+                    <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                        <a href="music.html">Music</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="my-32 text-center max-w-6xl mx-auto md:px-0 px-4">
+                <h4 class="md:text-6xl text-3xl font-bold mx-auto">A Collection of Sounds That Inspire, Motivate, and Comfort Me</h4>
+                <p class="md:text-2xl text-lg font-medium text-gray-300 mt-4">Music has always been a part of my life—it sets the mood, sparks creativity, and sometimes even says what words cannot.</p>
+            </div>
+            <div class="mx-auto max-w-4xl md:px-0 px-4">
+                <iframe class="shadow-lg rounded-lg shadow-blue-700" src="https://open.spotify.com/embed/playlist/37i9dQZF1FoNZgiHeqtBjz?utm_source=generator&theme=0" width="100%" height="600px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="py-24 bg-gradient-to-b from-black to-slate-900 md:px-0 px-4">
+            <div class="max-w-7xl mx-auto">
+                <h4 class="text-3xl font-bold">Songs That Stay With Me</h4>
+                <p class="mt-4 text-gray-300">Some songs come and go, but these tracks have stuck with me. Whether it's the lyrics, the melody, or the emotions they bring, each song on this list holds a special place in my life. Take a listen—you might find something you love too!</p>
+                <div class="space-y-8 mt-14">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7lZz6i5i69QjhP4Vp7P5TJ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6iJnUiGnUkFZ9cxoANrMwQ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/46Y54MOW8B63OR4LUUUBh4?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/75IpXpStMO3uztfZ9rY8Mx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/06pTb6Z0cskndQcC9zY00L?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/533d7NtqwCaRwxOQlAtzK3?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3TN0iGCBNNPbuqD7DyAe7A?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7bQ2IIkEWh1LCZwxa38EuX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto mt-24 md:px-0 px-4">
+                <h4 class="text-3xl font-bold">Playlists & Albums That Define My Sound</h4>
+                <p class="mt-4 text-gray-300">These are the albums and playlists I keep coming back to—whether it's for motivation, relaxation, or pure enjoyment. Each one holds a special place in my life, and maybe you'll find something here that resonates with you too!</p>
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-4 mt-14">
+                    <div class="col-span-1">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5mGR6qKnpILzSzq1yyAUXk?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="col-span-1">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5x3ZUgvYdLryFxvI4n1F1G?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="col-span-1">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1hMAGfvamVXuSWBFQRFMeq?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#top" class="fixed bottom-5 right-5 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+            </svg>              
+        </a>
+    </body>
+</html>

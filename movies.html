@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Movies</title>
+        <script src='https://cdn.tailwindcss.com'></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <style>
+
+            /* Keyframes for Continuous Loop */
+            @keyframes marquee {
+                from { transform: translateX(0); }
+                to { transform: translateX(-50%); } 
+            }
+        </style>
+    </head>
+    <body class="font-instrument text-white bg-gradient-to-b from-black to-slate-900 min-h-dvh">
+        <nav class="w-full p-4 md:flex block items-center justify-between" id="top" x-data="{
+            open : false
+        }" @click.outside="open = false">
+            <div class="flex items-center justify-between md:w-auto w-full">
+                <a href="/" class="md:text-3xl text-xl font-medium">Thaddeus Toledo</a>
+                <button class="md:hidden block" @click="open = !open">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                  
+                </button>
+            </div>
+            <ul class="md:flex block items-center md:space-x-8 md:mt-0 mt-4" :class="{'hidden' : !open}" >
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="index.html#skills">Career</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="biography.html">Biography</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="movies.html">Movies</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="music.html">Music</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="my-32 text-center max-w-6xl mx-auto md:px-0 px-4">
+            <h4 class="md:text-6xl text-3xl font-bold mx-auto">Here Are Some of My All-Time Favorite Movies and TV Series</h4>
+            <p class="md:text-2xl text-lg font-medium text-gray-300 mt-4">This is where I highlight my most-loved movies and series, featuring genres that I enjoy the most, from thrilling mysteries and action-packed adventures to heartfelt dramas and lighthearted comedies.</p>
+        </div>
+        <div class="w-full overflow-hidden whitespace-nowrap relative md:px-0 px-4">
+            <div class="flex gap-4 w-max animate-[marquee_60s_linear_infinite]">
+                <img src="assets/images/movies/65fRXh5.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/hGAu26s.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/I10jF7X.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/IN0iL18.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/LAJTUE2.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/vrtu91d.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/YhDQkMt.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/swElNI4.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/rqw2m0R.jpeg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BOTYyNGVhYWQtYTJhNC00ZTVlLWFmNzEtMjc5MDJkYzM1Y2M3XkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BZmQ3NDVhMmYtOTJiNS00NmM2LThiZmYtMzE1YzM4MzFlODMzXkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BZjQ5YWFkZmEtNDcwMy00N2ZmLWExM2MtYzlmNGQ2MDU4ZjExXkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BMzA0YzI4NDYtYjgyZi00NmZmLWFiODgtNTA4NDliYWQxMDQ4XkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BMTUzODMyOTcxNl5BMl5BanBnXkFtZTgwMTk0NTY0NjE@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BMWU3NDAzY2MtYWUwNy00YjM0LThmMTctYTgyNTA1YTQ5Yzk5XkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BMTUxMDc1OTAzM15BMl5BanBnXkFtZTgwOTMwOTMyMDI@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BNThiODdmOGUtN2EyZC00Y2FhLWFlZWUtMDM4ZjAyMWE0MGQyXkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BNjcyMTA5YzQtYmE4NC00OGU0LWI4ZGUtZThhZTU0MjM0MTMzXkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BNTU3YzkxNmItYzZkYy00YWVmLTg2YWMtNTY4ZGM2YTg3YjM1XkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+                <img src="assets/images/movies/MV5BNWNiMGViYzMtMjE5NS00MWNlLWFlYTktNjU4NTc4MzRlYmNkXkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg shadow-lg w-full md:h-96 h-48 object-cover">
+            </div>
+        </div>
+        <div class="my-24 container md:px-0 px-4 mx-auto">
+            <h2 class="text-3xl font-semibold mb-8">Action</h2>
+            <div class="grid md:grid-cols-5 grid-cols-2 gap-4">
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/MV5BNThiODdmOGUtN2EyZC00Y2FhLWFlZWUtMDM4ZjAyMWE0MGQyXkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg w-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Spider-Man: No Way Home</h3>
+                        <p class="text-sm mt-2">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/I10jF7X.jpeg" class="rounded-lg w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Spider-Man: Homecoming</h3>
+                        <p class="text-sm mt-2">Peter Parker tries to stop Adrian 'The Vulture' Toomes from selling weapons made with advanced Chitauri technology while trying to balance his life as an ordinary high school student.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/MV5BZjQ5YWFkZmEtNDcwMy00N2ZmLWExM2MtYzlmNGQ2MDU4ZjExXkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">What If?</h3>
+                        <p class="text-sm mt-2">Exploring pivotal moments from the Marvel Cinematic Universe and turning them on their head, leading the audience into uncharted territory.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/vrtu91d.jpeg" class="rounded-lg w-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Dr Strange</h3>
+                        <p class="text-sm mt-2">While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/MV5BZmQ3NDVhMmYtOTJiNS00NmM2LThiZmYtMzE1YzM4MzFlODMzXkEyXkFqcGc@._V1_QL75_UX820_.jpg" class="rounded-lg w-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Loki</h3>
+                        <p class="text-sm mt-2">The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-24 container md:px-0 px-4 mx-auto">
+            <h2 class="text-3xl font-semibold mb-8">Sci-Fi</h2>
+            <div class="grid md:grid-cols-5 grid-cols-2 gap-4">
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" class="rounded-lg w-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Interstellar</h3>
+                        <p class="text-sm mt-2">The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg" class="rounded-lg w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Ready Player One</h3>
+                        <p class="text-sm mt-2">When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/nhiShTvoga8fyGX8468hLj6pCtW.jpg" class="rounded-lg w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Assassin's Creed</h3>
+                        <p class="text-sm mt-2">Through a technology that unlocks the generic memories of his ancestor in 15th century Spain, Callum Lynch discovers he is a descendant of an ancient line of Assassins and amasses lethal skills to take on the oppressive Templar Order.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg" class="rounded-lg w-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Lucy</h3>
+                        <p class="text-sm mt-2">A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond human logic.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 relative group">
+                    <img src="assets/images/movies/drbERzlA4cuRWhsTXfFOY4mRR4f.jpg" class="rounded-lg w-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                        <h3 class="text-xl font-bold">Maze Runner: The Death Cure</h3>
+                        <p class="text-sm mt-2">Thomas leads his group of escaped Gladers on their final and most dangerous mission yet. To save their friends, they must break into the legendary Last City, a WCKD-controlled labyrinth that may turn out to be the deadliest maze of all. Anyone who makes it out alive will get answers to the questions the Gladers have been asking since they first arrived in the maze.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#top" class="fixed bottom-5 right-5 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+            </svg>              
+        </a>
+    </body>
+</html>
