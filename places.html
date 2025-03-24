@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Places</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link rel="stylesheet" href="assets/css/fonts.css">
+    </head>
+    <body class="bg-gradient-to-b from-black to-slate-900 text-white font-instrument">
+        <nav class="w-full p-4 md:flex block items-center justify-between" id="top" x-data="{
+            open : false
+        }" @click.outside="open = false">
+            <div class="flex items-center justify-between md:w-auto w-full">
+                <a href="/" class="md:text-3xl text-xl font-medium">Thaddeus Toledo</a>
+                <button class="md:hidden block" @click="open = !open">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                  
+                </button>
+            </div>
+            <ul class="md:flex block items-center md:space-x-8 md:mt-0 mt-4" :class="{'hidden' : !open}" >
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="index.html#skills">Career</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="biography.html">Biography</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="movies.html">Movies</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="music.html">Music</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="bucket-list.html">Bucket List</a>
+                </li>
+                <li class="md:w-auto w-full md:border-0 md:my-0 my-2 md:p-0 p-2 rounded cursor-pointer md:hover:bg-transparent hover:bg-indigo-800">
+                    <a href="places.html">Places</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mt-16 container mx-auto relative">
+            <img src="assets/images/travel-list/pexels-vincent-albos-322257-1750754.jpg" class="w-full h-96 object-cover md:rounded-3xl">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black md:rounded-3xl">
+                    <div class="absolute bottom-0 left-0 p-10">
+                    <div class="text-white">
+                        <h2 class="md:text-4xl text-2xl font-bold">Places on My Travel Bucket List</h2>
+                        <p class="md:text-2xl text-lg mt-2 text-gray-400">From iconic landmarks to hidden gems, these are the destinations I’ve always dreamed of visiting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-4 md:px-0 px-4 mt-8">
+            <img src="assets/images/travel-list/pexels-hebaysal-773471.jpg" class="md:rounded-lg rounded w-full h-[400px] object-cover">
+            <div class="col-span-1">
+                <h5 class="text-2xl">Switzerland</h5>
+                <p class="mt-1 text-gray-300">Switzerland offers breathtaking alpine landscapes, charming cities, and a perfect blend of adventure and relaxation, making it an unforgettable travel experience. From the majestic peaks of the Swiss Alps to the serene beauty of its lakes, Switzerland is a paradise for nature lovers and outdoor enthusiasts. The country is also home to vibrant cities like Zurich and Geneva, where you can explore rich cultural heritage, world-class museums, and exquisite cuisine. Whether you're skiing in the winter, hiking in the summer, or simply enjoying the picturesque scenery, Switzerland promises a memorable journey filled with awe-inspiring moments.</p>
+                <h5 class="text-2xl mt-4">How to Get There</h5>
+                <p class="mt-1 text-gray-300">Traveling to Switzerland is convenient with multiple options available. The country is well-connected by air, with major international airports in Zurich, Geneva, and Basel. Direct flights from various global cities make it easy to reach Switzerland. Additionally, Switzerland's efficient rail network offers seamless connections to neighboring countries, making train travel a scenic and comfortable option. For those who prefer driving, well-maintained highways provide access from surrounding countries. Whether you choose to fly, take a train, or drive, getting to Switzerland is straightforward and hassle-free.</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-4 md:px-0 px-4 mt-8">
+            <img src="assets/images/travel-list/pexels-gabriel-peter-219375-710263.jpg" class="md:rounded-lg rounded w-full h-[400px] object-cover">
+            <div class="col-span-1">
+                <h5 class="text-2xl">New Zealand</h5>
+                <p class="mt-1 text-gray-300">New Zealand offers breathtaking landscapes, thrilling outdoor adventures, and a unique blend of Maori culture and modern charm, making it a must-visit destination. From the stunning fjords of Milford Sound to the geothermal wonders of Rotorua, New Zealand's natural beauty is unparalleled. The country is a paradise for adventure seekers, offering activities such as bungee jumping, skydiving, and hiking in some of the world's most scenic locations. Additionally, New Zealand's vibrant cities like Auckland and Wellington provide a rich cultural experience with their museums, galleries, and diverse culinary scene. Whether you're exploring the serene beaches, lush forests, or majestic mountains, New Zealand promises an unforgettable journey filled with awe-inspiring moments and warm hospitality.</p>
+                <h5 class="text-2xl mt-4">How to Get There</h5>
+                <p class="mt-1 text-gray-300">New Zealand is accessible via international flights to Auckland, Wellington, and Christchurch. Direct flights from major cities worldwide make travel easy. Domestic flights, scenic drives, and public transport provide excellent connectivity within the country.</p>
+            </div>
+        </div>
+        
+        <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-4 md:px-0 px-4 mt-8">
+            <img src="assets/images/travel-list/pexels-pixabay-48814.jpg" class="md:rounded-lg rounded w-full h-[400px] object-cover">
+            <div class="col-span-1">
+                <h5 class="text-2xl">Antarctica</h5>
+                <p class="mt-1 text-gray-300">Antarctica is a once-in-a-lifetime destination where you can witness stunning icy landscapes, unique wildlife, and the raw beauty of the Earth's last untouched frontier. This remote and pristine continent offers an unparalleled experience for adventurers and nature enthusiasts alike. Visitors can marvel at the towering icebergs, expansive ice fields, and dramatic glaciers that define the Antarctic scenery. The region is also home to a diverse array of wildlife, including penguins, seals, and whales, providing incredible opportunities for wildlife observation and photography. The sense of isolation and tranquility found in Antarctica is unmatched, making it a truly unique and unforgettable travel destination. Whether you're exploring the icy waters by kayak, hiking on the frozen terrain, or simply soaking in the breathtaking views, Antarctica promises an extraordinary journey filled with awe-inspiring moments and a deep connection to the natural world.</p>
+                <h5 class="text-2xl mt-4">How to Get There</h5>
+                <p class="mt-1 text-gray-300">Reaching Antarctica requires a guided expedition, usually departing from Argentina’s Ushuaia via cruise ships. Flights are also available to research stations for specialized tours.</p>
+            </div>
+        </div>
+        
+        <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-4 md:px-0 px-4 mt-8">
+            <img src="assets/images/travel-list/pexels-vincent-albos-322257-1750754.jpg" class="md:rounded-lg rounded w-full h-[400px] object-cover">
+            <div class="col-span-1">
+                <h5 class="text-2xl">Canada</h5>
+                <p class="mt-1 text-gray-300">Canada offers vast landscapes, vibrant cities, and a perfect mix of adventure and culture, from the Rocky Mountains to bustling metropolises like Toronto and Vancouver. The country's natural beauty is unparalleled, with stunning national parks, pristine lakes, and majestic mountains providing endless opportunities for outdoor activities such as hiking, skiing, and wildlife watching. In addition to its natural wonders, Canada boasts a rich cultural heritage, with diverse communities and vibrant arts scenes in cities like Montreal and Ottawa. Visitors can explore world-class museums, enjoy a variety of culinary delights, and experience the warm hospitality of Canadians. Whether you're seeking adventure in the great outdoors or immersing yourself in the cultural vibrancy of its cities, Canada promises a memorable and enriching travel experience.</p>
+                <h5 class="text-2xl mt-4">How to Get There</h5>
+                <p class="mt-1 text-gray-300">Canada is easily accessible through international airports in major cities. Domestic travel is well-supported by flights, trains, and scenic road trips.</p>
+            </div>
+        </div>
+        
+        <footer class="w-full py-10">
+            <div class="max-w-7xl mx-auto px-2.5 text-white ">
+                <div class="border border-slate-700 bg-slate-800/50 rounded-lg">
+                    <div class="p-10">
+                        <div class="grid md:grid-cols-2 grid-cols-1 gap-2.5">
+                            <div class="col-span-1">
+                                <h6 class="text-2xl font-semibold">Thaddeus Toledo</h6>
+                                <p class="text-sm text-slate-400">© 2024 | All rights reserved.</p>
+                            </div>
+                            <div class="grid grid-cols-3 col-span-1 gap-2.5 md:my-0 my-4">
+                                <div class="col-span-1">
+                                    <h6 class="text-lg">Navigate</h6>
+                                    <ul class="text-sm text-slate-400">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="index.html#skills">Career</a></li>
+                                        <li><a href="biography.html">Biography</a></li>
+                                        <li><a href="resume.html">Resume</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-1">
+                                    <h6 class="text-lg">Projects</h6>
+                                    <ul class="text-sm text-slate-400">
+                                        <li>
+                                            <a href="http://thaddeustoledo.tech/projects/1/">Flask CMS</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://thaddeustoledo.tech/projects/2/">Portfolio CMS</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://thaddeustoledo.tech/projects/3/">Godeym Clothing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-1">
+                                    <h6 class="text-lg">Socials</h6>
+                                    <ul class="text-sm text-slate-400">
+                                        <li><a href="https://www.linkedin.com/in/thaddeus-toledo-71b97425b/">LinkedIn</a></li>
+                                        <li><a href="https://www.facebook.com/thaddeus.toledo">Facebook</a></li>
+                                        <li><a href="https://github.com/tadiyusss">Github</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#top" class="fixed bottom-5 right-5 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+            </svg>              
+        </a>
+    </body>
+</html>
